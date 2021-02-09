@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2012\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="F:\黄\huangchujing\GetData\GetData2ok\GetData\bin\Debug\GetData.exe">
+   <Modules>
+    <Module Name="getdata.exe">
+     <Namespaces>
+      <Namespace Name="GetData">
+       <Types>
+        <Type Name="productsourcestockDal" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddErrorlog(System.Exception,System.String,System.Int32,System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="285">传递给 'productsourcestockDal.AddErrorlog(Exception, string, int, string, int)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'DateTime.Now', 'ErrorDetails', 'base.ToString()', 'ex.Message', '' '', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="292">传递给 'productsourcestockDal.AddErrorlog(Exception, string, int, string, int)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'ex.Source', 'ex.TargetSite', 'base.ToString()', 'ex.Message', '' '', 'DateTime.Now', 'ErrorDetails', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="279">传递给 'productsourcestockDal.AddErrorlog(Exception, string, int, string, int)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'ErrorDetails', 'base.ToString()', 'ex.Message', '' '', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddErrorlog(System.String,System.Int32,System.String,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="324">传递给 'productsourcestockDal.AddErrorlog(string, int, string, int, string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'DateTime.Now', 'ErrorDetails', 'Scode', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="331">传递给 'productsourcestockDal.AddErrorlog(string, int, string, int, string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'DateTime.Now', 'ErrorDetails', 'Scode', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="318">传递给 'productsourcestockDal.AddErrorlog(string, int, string, int, string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'ErrorDetails', 'Scode', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddErrorlog(System.String,System.String,System.Int32,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="249">传递给 'productsourcestockDal.AddErrorlog(string, string, int, bool)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'DateTime.Now', 'SourceCode', 'addErrorRowNum', 'ErrorMsg', 'DateTime.Now', 'addErrorRowNum'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AgainRenew(System.String,System.Int32,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="1042">传递给 'productsourcestockDal.AgainRenew(string, int, out string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteErrorlog(System.String,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="385">传递给 'productsourcestockDal.DeleteErrorlog(string, int, string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'beginRow', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DelteClientProductsourcestock()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="588">传递给 'productsourcestockDal.DelteClientProductsourcestock()' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'scode'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetConfigu(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="117">传递给 'productsourcestockDal.GetConfigu(string)' 中的 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' 的查询字符串可能包含以下变量 'SourceCode'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetServerClientSCODE()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="498">传递给 'productsourcestockDal.GetServerClientSCODE()' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'this.SourceCode'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetServerScodeList(System.Int32,System.Int32,System.String&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="779">传递给 'productsourcestockDal.GetServerScodeList(int, int, out string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 '(skip + 1)', 'take'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSourceRenewIndex(System.String,System.String&amp;,System.Boolean&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="205">传递给 'productsourcestockDal.GetSourceRenewIndex(string, out string, out bool)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'SourceCode', '(index - 1)'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="196">传递给 'productsourcestockDal.GetSourceRenewIndex(string, out string, out bool)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'SourceCode'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateClientDataTables(System.Int32,System.Int32,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="702">可以在方法 'productsourcestockDal.UpdateClientDataTables(int, int, out string)' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 702</Issue>
+             <Issue Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="717">可以在方法 'productsourcestockDal.UpdateClientDataTables(int, int, out string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 717</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="695">传递给 'productsourcestockDal.UpdateClientDataTables(int, int, out string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'st.PRICEA', 'st.PRICEB', 'st.PRICEC', 'st.PRICED', 'st.PRICEE', 'st.DISCA', 'st.DISCB', 'st.DISCC', 'st.DISCD', 'st.DISCE', 'st.BAL', 'st.SCODE'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="627">传递给 'productsourcestockDal.UpdateClientDataTables(int, int, out string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'this.SourceCode'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateErrorlog(System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-10-27 03:12:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="f:\黄\huangchujing\GetData\GetData2ok\GetData" File="productsourcestockDal.cs" Line="359">传递给 'productsourcestockDal.UpdateErrorlog(string, int)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'DateTime.Now', 'SourceCode', 'SourceRenewIndex'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 717</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

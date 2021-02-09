@@ -1,0 +1,15 @@
+E:\黄楚敬\demo\work\GetData\Test\bin\Debug\Test.exe.config
+E:\黄楚敬\demo\work\GetData\Test\bin\Debug\Test.exe
+E:\黄楚敬\demo\work\GetData\Test\bin\Debug\Test.pdb
+E:\黄楚敬\demo\work\GetData\Test\obj\Debug\Test.exe
+E:\黄楚敬\demo\work\GetData\Test\obj\Debug\Test.pdb
+C:\Users\Administrator\Desktop\敬\GetData\Test\bin\Debug\Test.exe.config
+C:\Users\Administrator\Desktop\敬\GetData\Test\bin\Debug\Test.exe
+C:\Users\Administrator\Desktop\敬\GetData\Test\bin\Debug\Test.pdb
+C:\Users\Administrator\Desktop\敬\GetData\Test\obj\Debug\Test.exe
+C:\Users\Administrator\Desktop\敬\GetData\Test\obj\Debug\Test.pdb
+C:\Users\Administrator\Desktop\Jing\GetData\Test\bin\Debug\Test.exe.config
+C:\Users\Administrator\Desktop\Jing\GetData\Test\bin\Debug\Test.exe
+C:\Users\Administrator\Desktop\Jing\GetData\Test\bin\Debug\Test.pdb
+C:\Users\Administrator\Desktop\Jing\GetData\Test\obj\Debug\Test.exe
+C:\Users\Administrator\Desktop\Jing\GetData\Test\obj\Debug\Test.pdb
